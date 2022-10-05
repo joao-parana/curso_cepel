@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "GIT: Running pre-commit"
+echo "----------------------------------------------------------"
+
+python3 -m unittest test.py
+
+if [ $? -eq 0 ]
+then
+  echo "Test pass successfully"
+else
+  echo "Test doesn't pass. Commit aborted"
+  exit 100
+fi
+
