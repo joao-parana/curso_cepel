@@ -1,5 +1,5 @@
 import unittest
-import cepel
+from cepel import cepel
 
 class MyTest(unittest.TestCase):
     def test(self):

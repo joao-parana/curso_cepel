@@ -1,10 +1,15 @@
-def soma(a,b):
-    return a+b
+""""
+soma(a,b) descrição do método
 
-print("Hello World")
+Isto é uma docstring para o método soma do pacote cepel
+"""
 
-for i in range(5):
-    print("Novo feature escrito")
+def soma(a, b):
+    return a + b
 
 if __name__ == '__main__':
     soma(1,2)
+    print("Hello World")
+
+    for i in range(3):
+        print("Novo feature escrito")
