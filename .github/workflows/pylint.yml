@@ -20,6 +20,4 @@ jobs:
         pip install pylint
     - name: Running tests
       run: |
-        python test.py
-        
- 
+        python -m unittest test.py
