@@ -20,6 +20,6 @@ jobs:
         pip install pylint
     - name: Running tests
       run: |
-        python ./cepel/testes/*.py
+        python test.py
         
  
