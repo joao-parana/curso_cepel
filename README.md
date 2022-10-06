@@ -8,8 +8,13 @@ Para executar os testes usando o **Framework `unittest`** faça:
 python3 -m unittest test.py
 ```
 
-Se desejar proteger o projeto de forma que o código não para para o 
-repositório remoto com erros, use um Hook do Git Localmente
+Erros no repositório remoto (GtHub por exemplo), usado por outros desenvolvedores, 
+causam problemas no desenvolvimento colaborativo das equipes.
+
+Se desejar proteger o projeto de forma que o código não vá para para o 
+repositório remoto com erros, após `add / commit / push`, use um Hook do Git Localmente.
+
+Veja este exemplo com interceptação do comando `git commit` via Hook local do GIT.
 
 ```bash
 cat .git/hooks/pre-commit
